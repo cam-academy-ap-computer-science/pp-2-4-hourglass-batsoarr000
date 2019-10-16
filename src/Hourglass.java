@@ -3,6 +3,7 @@ I am hoping to create a for loop system that activates through a constant.
 constant-for loop-for loop-...
 working from inside the hour glass out
 Class constant changes height and levels in the hour glass
+
 */
 
 public class Hourglass {
