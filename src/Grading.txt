@@ -1,0 +1,53 @@
+Total:  14/25
+
+10/10 - Correct Output (must compile and run)
+1/3 - Proper Use of Static Methods
+0/3 - Proper Use of for loops
+1/3 - Pseudocode
+0/2 - Comments
+1/2 - Consistent Layout and Style following Style Guidelines
+1/2 - Proper Use of at least one Class Constant
+
+0/2 Extra Credit - Hourglass can be resized by changing only one Class Constant.
+
+I strongly recommend that you read section 2-5 in the book.  It walks
+you through doing a project exactly like this, using nested for loops
+to minimize the number of static methods you need to create, and make
+the size of the hourglass easy to change.
+
+Your use of for loops in this program does nothing except make the
+program longer.  Every single one of your for loops executes only one
+time, and could simply be removed for more efficiency.  At no point
+do you use a for loop to perform a repetitive task repetitively.
+
+The top four lines of sand in the hour glass can be printed with
+a single static method, using a calculation to determine how many spaces
+to print and how many colons to print, and using a for loop print that
+many of each on each line based on the calculation.  I walked through
+an example of that step by step in class, and provided you the exact
+procedure to do those calculations, and an example of the exact structure
+of the for loops involved.  The book has the same information.
+
+You are definitely going to need to be able to do for loops
+in a way that is useful and productive moving forward in this class.
+I strongly recommend that you dedicate some time to additional review
+on the material you have been provided.  And I also strongly recommend that
+you re-do this assignment using a single static method for the four
+lines of sand at the top of the hourglass, and a single static method
+for the four line of sand at the bottom of the hourglass.
+
+The structure inside those methods should look like:
+
+public static method topSand() {
+	for (int line = 1; line <= 4; line++) {
+		int numSpaces = (put your calculation here);
+		int numColons = (put your calculation here);
+		for (int space = 1; space <= numSpaces; space++) {
+			// print a space
+		}
+		// print a backslash
+		for (int colon = 1; colon <= numColons; colon++) {
+			// print a colon
+		}
+	}
+}
